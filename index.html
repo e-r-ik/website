@@ -7,48 +7,30 @@
     <script defer src="main.js" charset="utf-8"></script>
   </head>
   <body>
-    <header>
-      <table>
-        <tr>
-          <td colspan="5">
-            <h1>Min sida</h1>
-          </td>
-        </tr>
-        <tr id="centerNav">
-          <td><section class="sideNavOpen" onclick="openNav()">&#9776;Sites</section></td>
-          <td><a href="#Home">Home</a></td>
-          <td><a href="#about">About</a></td>
-          <td><a href="#b">b</a></td>
-          <td><a href="#c">c</a></td>
-        </tr>
-      </table>
-    </header>
     <main id="box">
+      <header>
+        <h1>Min sida</h1>
+      </header>
+      <nav id="centerNav">
+        <section class="sideNavOpen" onclick="openNav()">&#9776;Sites</section>
+        <a href="index.html">Min Sida</a>
+        <a href="about.html">Om mig</a>
+        <a href="#b">Sidomeny</a>
+        <a href="#c"></a>
+      </nav>
       <nav id="sideNav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
         <a href="#about">About</a>
         <a href="#me">Me</a>
       </nav>
-      <article id="#about">
-        <table>
-          <tr>
-            <td colspan="2">
-              <h1>Om den här sidan</h1>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Det här är den VÄLDIGT coola sidan om mitt programmeringsäventyr.
-              Jag kommer att tala om olika saker som hur jag skriver sidor i html,
-            hur man gör en häftig sidmeny som kommer ner när man trycker på den och andra häftiga grejer</p>
-            </td>
-            <td>
-              <figure>
-                <img src="meme1.png" alt="Very ambitious crossover meme">
-              </figure>
-            </td>
-          </tr>
-        </table>
+      <article id="#home">
+        <p>Det här är den VÄLDIGT coola sidan om mitt programmeringsäventyr.
+           Jag kommer att tala om olika saker som hur jag skriver sidor i html,
+           hur man gör en häftig sidmeny som kommer fram när man trycker på den
+           och andra häftiga grejer</p>
+        <figure>
+          <img src="meme1.png" alt="Very ambitious crossover meme">
+        </figure>
       </article>
       <footer>
         <table>
