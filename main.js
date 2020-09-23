@@ -1,7 +1,7 @@
 function openNav() {
-  document.getElementById("sideNav").style.width = "250px";
+  document.getElementById("sideNav").style.width = "15%";
 }
 
 function closeNav() {
-  document.getElementById("sideNav").style.width = "0px";
+  document.getElementById("sideNav").style.width = "0%";
 }
