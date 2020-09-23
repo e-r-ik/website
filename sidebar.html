@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" width="device-width">
+    <title>Sidan om Erik</title>
+    <link rel="stylesheet" href="master.css">
+    <script defer src="main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <main id="box">
+      <header>
+        <h1>Sidomeny</h1>
+      </header>
+      <nav id="centerNav">
+        <section class="sideNavOpen" onclick="openNav()">&#9776;Sites</section>
+        <a href="index.html">Min Sida</a>
+        <a href="about.html">Om mig</a>
+        <a href="sidebar.html">Sidomeny</a>
+      </nav>
+      <nav id="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+        <a href="#about">About</a>
+        <a href="#me">Me</a>
+      </nav>
+      <article id="#home">
+        <section>
+          <p>I det här väldigt coola avsnittet kommer jag att berätta hur man gör en väldigt
+          snygg sidomeny som kommer fram när man trycker på en speciell knapp</p>
+          <figure>
+            <img src="bottomgear3.jpg" alt="Bottom gear meme nummer 3">
+          </figure>
+        </section>
+        <section>
+          <p>Till att börja med så behöver man lite CSS, först behöver man positionera den,
+          jag har min i översta vänstra hörnet och har satt position: fixed; för att den
+          ska följa med vart men än är på sidan</p>
+          <figure>
+            <img src="bottomgear4.jpg" alt="Ännu en trevlig bottom gear meme">
+          </figure>
+        </section>
+        <section>
+          <p>Nästa steg är att lägga till lite häftig javascript! Allt man behöver är
+          två funktioner, en som öppnar och en som stänger sidebaren. Allt dem gör egentligen
+          är att ändra width:en på sidebaren, den ena sätter den till 15% och den andra ändrar den tillbaka till 0</p>
+          <figure>
+            <img src="bottomgear5.jpg" alt="Bottom gear meme nummer 5">
+          </figure>
+        </section>
+      </article>
+      <footer>
+        <p>&copy;erik arvidson</p>
+      </footer>
+    </main>
+  </body>
+</html>
