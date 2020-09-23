@@ -1,3 +1,7 @@
+body {
+  width: 100%;
+}
+
 h1 {
   text-align: center;
   font-size: 60px;
@@ -5,12 +9,6 @@ h1 {
 
 p {
   font-size: 40px;
-}
-
-table, tr, td {
-  border: 1px solid black;
-  text-align: center;
-  width: 100%;
 }
 
 article, header {
@@ -40,7 +38,6 @@ img {
 }
 
 footer {
-  padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
   height: 15%;
@@ -82,8 +79,6 @@ footer {
 }
 
 #sideNav a {
-  margin: 8px 8px 8px 8px;
-  padding: 16px 32px 16px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #FFFFFF;
