@@ -7,34 +7,19 @@ h1 {
   font-size: 60px;
 }
 
-p {
-  font-size: 40px;
+article {
+  flex: 0 0 20%;
+  border: 1px solid black;
 }
 
-article, header {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 1%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+figure {
+  flex: 0 0 20%;
+  border: 1px solid black;
 }
 
 a {
   text-align: center;
   width: 100%;
-}
-
-section {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-img {
-  width: 800px;
-  height: 800px;
 }
 
 footer {
@@ -44,6 +29,8 @@ footer {
   background: black;
   color: white;
 }
+
+
 
 #centerNav {
   display: flex;
@@ -59,10 +46,14 @@ footer {
 }
 
 #box {
-  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
+  flex-direction: row;
+  border: 1px solid black;
+
 }
 
 #sideNav {
@@ -109,4 +100,9 @@ footer {
 .sideNavOpen {
   font-size: 30px;
   cursor: pointer;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
