@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" width="device-width">
-    <title>Om mig</title>
+    <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Erik, Personal Website, Sidomeny">
+    <title>Sidan om Erik</title>
     <link rel="stylesheet" href="master.css">
     <script defer src="main.js" charset="utf-8"></script>
   </head>
@@ -11,40 +12,49 @@
       <header>
         <h1>Om mig</h1>
       </header>
+      <section class="break"></section>
       <nav id="centerNav">
-        <section class="sideNavOpen" onclick="openNav()">&#9776;Sites</section>
-        <a href="index.html">Min Sida</a>
-        <a href="about.html">Om mig</a>
-        <a href="sidebar.html">Sidomeny</a>
-        <a href="#c"></a>
+        <a><section class="centerNavItem" onclick="openNav()">&#9776;Trevliga Sidor</section></a>
+        <a href="index.html"><section class="centerNavItem">Hem</section></a>
+        <a href="about.html"><section class="centerNavItem">Om mig</section></a>
+        <a href="sidebar.html"><section class="centerNavItem">Sidomeny</section></a>
       </nav>
+      <section class="break"></section>
       <nav id="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-        <a href="#about">About</a>
-        <a href="#me">Me</a>
+        <a href="javascript:void(0)" class="sideNavItem" onclick="closeNav()"><section>&times</section></a>
+        <a href="https://www.reddit.com/r/bottomgear" class="sideNavItem"><section>Bottom Gear</section></a>
+        <a href="https://www.youtube.com/watch?v=Nv9x7E5tnoA&ab_channel=SodaPopProductions" class="sideNavItem">Rolig video<section></section></a>
       </nav>
-      <article id="#ommig">
-        <section>
+      <article id="#home">
           <p>Det här lär vara den tråkigaste biten av denna sida hehe, men jag
           kommer att försöka göra den mer underhållande genom att ha några väldigt
           smaskiga memes :)</p>
-          <figure>
-            <img src="bottomgear1.jpg" alt="Bottom gear meme">
-          </figure>
-        </section>
-        <section id="break"></section>
-        <section>
-            <p>Så, till att börja med så ska jag prata lite om mig, jag är en
-            ganska normal snubbe och gillar att träna mycket. Jag är fortfarande
-            väldigt förtjust i dataspel och några av mina favoriter är Lol, bl3 och minecraft
-            När jag tänker på det så sammanfattar detta nog mig ganska bra</p>
-          <figure>
-            <img src="bottomgear2.jpg" alt="bottom gear meme 2">
-          </figure>
-        </section>
       </article>
+      <figure>
+        <img src="bottomgear1.jpg" alt="Bottom gear meme nummer 3">
+      </figure>
+      <section class="break"></section>
+      <article>
+        <p>Så, till att börja med så ska jag prata lite om mig, jag är en
+        ganska normal snubbe och gillar att träna mycket. Jag är fortfarande
+        väldigt förtjust i dataspel och några av mina favoriter är Lol, bl3 och minecraft
+        När jag tänker på det så sammanfattar detta nog mig ganska bra</p>
+      </article>
+      <figure>
+        <img src="bottomgear2.jpg" alt="Ännu en trevlig bottom gear meme">
+      </figure>
+      <section class="break"></section>
       <footer>
-        <p>&copy;erik arvidson</p>
+        <table>
+          <tr>
+            <td>Kontaktinformation</td>
+          </tr>
+          <tr>
+            <td><p>&copy;erik arvidson</p></td>
+            <td><p>tel. nummer: 076 *** ** **</p></td>
+            <td><p>email: erik.arvidson@****.se</p></td>
+          </tr>
+        </table>
       </footer>
     </main>
   </body>
