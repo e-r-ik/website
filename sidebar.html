@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" width="device-width">
+    <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Erik, Personal Website, Sidomeny">
     <title>Sidan om Erik</title>
     <link rel="stylesheet" href="master.css">
     <script defer src="main.js" charset="utf-8"></script>
@@ -13,16 +14,17 @@
       </header>
       <section class="break"></section>
       <nav id="centerNav">
-        <section class="sideNavOpen" onclick="openNav()">&#9776;Sites</section>
-        <a href="index.html">Hem</a>
-        <a href="about.html">Om mig</a>
-        <a href="sidebar.html">Sidomeny</a>
+        <a><section class="centerNavItem" onclick="openNav()">&#9776;Trevliga Sidor</section></a>
+        <a href="index.html"><section class="centerNavItem">Hem</section></a>
+        <a href="about.html"><section class="centerNavItem">Om mig</section></a>
+        <a href="sidebar.html"><section class="centerNavItem">Sidomeny</section></a>
+        <a href="#guide"><section class="centerNavItem">Ta mig till instruktionerna!</section></a>
       </nav>
       <section class="break"></section>
       <nav id="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-        <a href="#about">About</a>
-        <a href="#me">Me</a>
+        <a href="javascript:void(0)" class="sideNavItem" onclick="closeNav()"><section>&times</section></a>
+        <a href="https://www.reddit.com/r/bottomgear" class="sideNavItem"><section>Bottom Gear</section></a>
+        <a href="https://www.youtube.com/watch?v=Nv9x7E5tnoA&ab_channel=SodaPopProductions" class="sideNavItem">Rolig video<section></section></a>
       </nav>
       <article id="#home">
           <p>I det här väldigt coola avsnittet kommer jag att berätta hur man gör en väldigt
@@ -32,7 +34,7 @@
         <img src="bottomgear3.jpg" alt="Bottom gear meme nummer 3">
       </figure>
       <section class="break"></section>
-      <article>
+      <article id="guide">
         <p>Till att börja med så behöver man lite CSS, först behöver man positionera den,
         jag har min i översta vänstra hörnet och har satt position: fixed; för att den
         ska följa med vart men än är på sidan</p>
@@ -51,7 +53,16 @@
       </figure>
       <section class="break"></section>
       <footer>
-        <p>&copy;erik arvidson</p>
+        <table>
+          <tr>
+            <td>Kontaktinformation</td>
+          </tr>
+          <tr>
+            <td><p>&copy;erik arvidson</p></td>
+            <td><p>tel. nummer: 076 *** ** **</p></td>
+            <td><p>email: erik.arvidson@****.se</p></td>
+          </tr>
+        </table>
       </footer>
     </main>
   </body>
