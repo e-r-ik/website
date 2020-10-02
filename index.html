@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" width="device-width">
+    <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Erik, Personal Website, Sidomeny">
     <title>Sidan om Erik</title>
     <link rel="stylesheet" href="master.css">
     <script defer src="main.js" charset="utf-8"></script>
@@ -9,33 +10,43 @@
   <body>
     <main id="box">
       <header>
-        <h1>Min sida</h1>
+        <h1>Hem</h1>
       </header>
+      <section class="break"></section>
       <nav id="centerNav">
-        <section class="sideNavOpen" onclick="openNav()">&#9776;Sites</section>
-        <a href="index.html">Min Sida</a>
-        <a href="about.html">Om mig</a>
-        <a href="sidebar.html">Sidomeny</a>
-        <a href="#c"></a>
+        <a><section class="centerNavItem" onclick="openNav()">&#9776;Trevliga Sidor</section></a>
+        <a href="index.html"><section class="centerNavItem">Hem</section></a>
+        <a href="about.html"><section class="centerNavItem">Om mig</section></a>
+        <a href="sidebar.html"><section class="centerNavItem">Sidomeny</section></a>
       </nav>
+      <section class="break"></section>
       <nav id="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-        <a href="#about">About</a>
-        <a href="#me">Me</a>
+        <a href="javascript:void(0)" class="sideNavItem" onclick="closeNav()"><section>&times</section></a>
+        <a href="https://www.reddit.com/r/bottomgear" class="sideNavItem"><section>Bottom Gear</section></a>
+        <a href="https://www.youtube.com/watch?v=Nv9x7E5tnoA&ab_channel=SodaPopProductions" class="sideNavItem">Rolig video<section></section></a>
       </nav>
       <article id="#home">
-        <section>
-          <p>Det här är den VÄLDIGT coola sidan om mitt programmeringsäventyr.
-             Jag kommer att tala om olika saker som hur jag skriver sidor i html,
-             hur man gör en häftig sidmeny som kommer fram när man trycker på den
-             och andra häftiga grejer</p>
-          <figure>
-            <img src="meme1.png" alt="Very ambitious crossover meme">
-          </figure>
-        </section>
+        <p>Det här är den VÄLDIGT coola sidan om mitt programmeringsäventyr.
+          Jag kommer att tala om olika saker som hur jag skriver sidor i html,
+          hur man gör en häftig sidmeny som kommer fram när man trycker på den
+          och andra häftiga grejer</p>
       </article>
+      <figure>
+        <img src="specsavers.jpg" alt="Specsavers meme, bild på en bil som kört av vägen med texten skulle gått till specsavers">
+      </figure>
+      <section class="break"></section>
       <footer>
-        <p>&copy;erik arvidson</p>
+        <table>
+          <tr>
+            <td colspan="3">Kontaktinformation</td>
+          </tr>
+          <tr>
+            <td><p>&copy;erik arvidson</p></td>
+            <td><p>tel. nummer: 076 *** ** **</p></td>
+            <td><p>email: erik.arvidson@****.se</p></td>
+          </tr>
+        </table>
+      </footer>
     </main>
   </body>
 </html>
