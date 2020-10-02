@@ -1,32 +1,46 @@
-body {
+body, html {
   width: 100%;
-  height:
+  height: 100%;
+  background-color: #1b262c;
 }
 
 h1 {
   text-align: center;
   font-size: 6vh;
+  font-family: Arial;
+  color: #bbe1fa;
+}
+
+header {
+  border-radius: 3vh;
+  background-color: #0f4c75;
+  flex-grow: 1;
 }
 
 article {
   flex: 1 1 0px;
-  border: 1px solid black;
+  background-color: #3282b8;
+  border-radius: 3vh;
 }
 
 figure {
   flex: 1 1 0px;
-  border: 1px solid black;
 }
 
 a {
-  text-align: center;
-  width: 100%;
+  flex: 1;
   font-size: 3vh;
+  border-radius: 1vh;
+  background-color: #0f4c75;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 p {
-  border: 1px solid black;
   text-align: center;
+  font-size: 3vh;
+  font-family: Arial;
+  color: #bbe1fa;
 }
 
 img {
@@ -38,22 +52,20 @@ footer {
   bottom: 0;
   width: 100%;
   height: 15%;
-  background: black;
+  background: #1b262c;
   color: white;
+  font-family: Arial;
 }
 
 #centerNav {
   display: flex;
   justify-content: space-around;
-  margin-left: 20%;
-  margin-right: 20%;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 #centerNav a {
-  color: black;
   text-decoration: none;
-  font-size: 30px;
 }
 
 #box {
@@ -63,29 +75,34 @@ footer {
   margin-left: 20%;
   margin-right: 20%;
   flex-direction: row;
-  border: 1px solid black;
 
 }
 
 #sideNav {
-  height: 100%;
+  height: 18%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #1b262c;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
-#sideNav a {
+.sideNavItem {
+  margin-top: 5%;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 3vh;
+  font-family: Arial;
   color: #FFFFFF;
-  display: block;
   transition: 0.3s;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 #sideNav a:hover {
@@ -108,15 +125,16 @@ footer {
   #sideNav a {font-size: 18px;}
 }
 
-.sideNavOpen {
-  font-size: 30px;
+.centerNavItem {
+  font-size: 3vh;
+  font-family: Arial;
   cursor: pointer;
-  width: 100%;
   text-align: center;
+  color: #bbe1fa;
+  text-decoration: none;
 }
 
 .break {
   flex-basis: 100%;
   height: 10px;
-  border: 1px solid black;
 }
